@@ -1,17 +1,14 @@
 class School
   attr_accessor :name, :grade
-  
-school = School.new("Bayside High School")
-school.roster = {}
-school.add_student("Zach Morris", 9)
-
+  attr_reader :roster #getter
   
   def initialize(name)
-    @name = name
+    @roster = {} #"roster should be an empty hash upon initialization"
   end
   
-  def add_student
-    self.class.all << self
+  def add_student(name, grade) #instance method
+    @roster[grade].join
+    @roster[grade] << Name
   end
   
   def sort
