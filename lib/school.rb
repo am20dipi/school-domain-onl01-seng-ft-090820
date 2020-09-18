@@ -6,8 +6,8 @@ class School
   end
   
   def add_student(name, grade) #instance method
-    @roster[grade].join
-    @roster[grade] << Name
+    @roster[grade] = []  #set it equal to an empty array
+    @roster[grade] << name
   end
   
   def sort
