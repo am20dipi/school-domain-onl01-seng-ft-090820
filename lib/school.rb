@@ -6,8 +6,12 @@ class School
   end
   
   def add_student(name, grade) #instance method
-    @roster[grade] = []  if !@roster[grade] #set it equal to an empty array
+    @roster[grade] = []  if !@roster[grade] #set it equal to an empty array if the roster is nil 
     @roster[grade] << name
+  end
+  
+  def grade(grade) #instance method
+    @roster[grade]
   end
   
   def sort
