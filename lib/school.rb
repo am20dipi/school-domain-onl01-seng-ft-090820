@@ -16,7 +16,8 @@ class School
   
   def sort
     @roster.each do |grade, names|
-      names.sort!
+      names.sort! #to make sort destructive & return the new array alphabetically
+    end
   end
 end
 
